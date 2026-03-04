@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appmodel/manifest/1.1" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:type="TaskPaneApp">
+  <Id>7d1234b0-5678-4abc-89ab-ef1234567890</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>PageLinkerDev</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="OneNote Page Linker" />
+  <Description DefaultValue="Search for pages and insert a list of clickable links." />
+  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png" />
+  
+  <Hosts>
+    <Host Name="OneNote" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://localhost:3000/index.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Page Linker</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; padding: 20px; background-color: #fff; }
+        h2 { color: #80397B; font-size: 1.2em; }
+        .container { display: flex; flex-direction: column; gap: 10px; }
+        input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { 
+            padding: 10px; 
+            background-color: #80397B; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover { background-color: #5c2958; }
+        #status { margin-top: 15px; font-size: 0.85em; color: #444; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Find Page Links</h2>
+        <input type="text" id="searchInput" placeholder="Search page title..." />
+        <button id="btnGenerate">Insert Link List</button>
+        <div id="status">Ready</div>
+    </div>
+    <script src="taskpane.js"></script>
+</body>
+</html>
