@@ -3,33 +3,65 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>Page Linker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneNote Page Linker</title>
+    
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; padding: 20px; background-color: #fff; }
-        h2 { color: #80397B; font-size: 1.2em; }
-        .container { display: flex; flex-direction: column; gap: 10px; }
-        input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
-        button { 
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            padding: 15px; 
+            background-color: #f9f9f9; 
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        h2 { 
+            color: #80397B; /* OneNote Purple */
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        input { 
+            width: 100%; 
             padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+        }
+        button { 
+            width: 100%; 
+            padding: 12px; 
             background-color: #80397B; 
             color: white; 
             border: none; 
             border-radius: 4px; 
-            cursor: pointer;
-            font-weight: bold;
+            cursor: pointer; 
+            font-weight: 600;
         }
-        button:hover { background-color: #5c2958; }
-        #status { margin-top: 15px; font-size: 0.85em; color: #444; }
+        button:hover { 
+            background-color: #5c2958; 
+        }
+        #status { 
+            margin-top: 10px; 
+            font-size: 0.85em; 
+            line-height: 1.4;
+        }
+        .success { color: #28a745; }
+        .error { color: #dc3545; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Find Page Links</h2>
-        <input type="text" id="searchInput" placeholder="Search page title..." />
+        <h2>Page Search</h2>
+        <input type="text" id="searchInput" placeholder="Enter page title keyword..." />
         <button id="btnGenerate">Insert Link List</button>
-        <div id="status">Ready</div>
+        <div id="status">Ready to search...</div>
     </div>
+
     <script src="taskpane.js"></script>
 </body>
 </html>
