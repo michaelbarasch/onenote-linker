@@ -8,13 +8,13 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="OneNote Page Linker" />
   <Description DefaultValue="Search for pages and insert a list of clickable links." />
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png" />
+  <IconUrl DefaultValue="https://yourusername.github.io/onenote-linker/icon.png" />
   
   <Hosts>
     <Host Name="OneNote" />
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/index.html" />
+    <SourceLocation DefaultValue="https://michaelbarasch.github.io/onenote-linker/index.html" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
 </OfficeApp>
